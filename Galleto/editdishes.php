@@ -27,12 +27,13 @@
 			<input type="text" name="typeofdish" value="<?php echo $getDishByID['typeofdish']; ?>">
 		</p>
 		<p>
-			<label for="ingredients">Ingredients</label> 
-			<input type="textarea" name="ingredients" value="<?php echo $getDishByID['ingredients']; ?>">
+    		<label for="ingredients">Ingredients:</label>
+    		<textarea name="ingredients" placeholder="List the ingredients here..."><?php echo htmlspecialchars($getDishByID['ingredients']); ?></textarea>
 		</p>
+
 		<p>
-			<label for="info">Description</label> 
-			<input type="textarea" name="info" value="<?php echo $getDishByID['info']; ?>">
+    		<label for="info">Description:</label>
+   		 <textarea name="info" placeholder="Describe the preparation steps here..."><?php echo htmlspecialchars($getDishByID['info']); ?></textarea>
 		</p>
 		<div class="ebtn">
       <input type="hidden" name="chef_id" value="<?php echo htmlspecialchars($getDishByID['chef_ID']); ?>">
